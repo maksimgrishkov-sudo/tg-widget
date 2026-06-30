@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Студия красоты «Лилия» — демо сайта с Telegram-виджетом</title>
+<style>
+  body { font-family: -apple-system, Arial, sans-serif; margin: 0; background: #fafafa; color: #333; }
+  header { background: #2b2b2b; color: white; padding: 60px 20px; text-align: center; }
+  header h1 { margin: 0 0 10px; font-size: 32px; }
+  header p { opacity: 0.8; }
+  .content { max-width: 700px; margin: 40px auto; padding: 0 20px; }
+  .card { background: white; border-radius: 12px; padding: 24px; margin-bottom: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+  .badge { display: inline-block; background: #0088cc; color: white; padding: 4px 12px; border-radius: 20px; font-size: 13px; margin-bottom: 16px; }
+  footer { text-align: center; padding: 40px; color: #999; font-size: 14px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>💇 Студия красоты «Лилия»</h1>
+  <p>Это демо-сайт — показывает, как Telegram-виджет выглядит на реальной странице</p>
+</header>
+
+<div class="content">
+  <div class="badge">👇 Кнопка в правом нижнем углу — это и есть виджет</div>
+
+  <div class="card">
+    <h3>Как это работает</h3>
+    <p>На любой сайт (Tilda, Wix, WordPress, обычный HTML) вставляется один тег <code>&lt;script&gt;</code> —
+    и на сайте появляется плавающая кнопка Telegram. Посетитель кликает — открывается чат с ботом,
+    который сам проводит запись на услугу, без участия администратора.</p>
+  </div>
+
+  <div class="card">
+    <h3>Код для вставки</h3>
+    <pre style="background:#f4f4f4; padding:16px; border-radius:8px; overflow-x:auto;"><code>&lt;script
+  src="http://72.56.236.144:8080/widget.js"
+  data-bot="dance_studio_2026_bot"
+  data-text="Записаться онлайн"
+  data-color="#0088cc"&gt;
+&lt;/script&gt;</code></pre>
+    <p>Вставляется перед закрывающим тегом <code>&lt;/body&gt;</code>. Заменить нужно только <code>data-bot</code> на username вашего бота.</p>
+  </div>
+
+  <div class="card">
+    <h3>Попробуйте прямо сейчас</h3>
+    <p>Нажмите на синюю кнопку в правом нижнем углу этой страницы — откроется живой бот для записи в салон красоты.</p>
+  </div>
+</div>
+
+<footer>
+  Демо-стенд: Telegram-боты для сайтов — @grishkov_chatbots
+</footer>
+
+<script
+  src="http://72.56.236.144:8080/widget.js"
+  data-bot="dance_studio_2026_bot"
+  data-text="Записаться онлайн"
+  data-color="#0088cc">
+</script>
+
+</body>
+</html>
